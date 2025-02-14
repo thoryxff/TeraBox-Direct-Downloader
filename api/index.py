@@ -38,26 +38,27 @@ cookies = {
     'browserid': 'p4nVrnlkUVKcnbbJHnIClAhSL5uXs01e-0svx0bm7KHLUB6wIVvCUNGLIpU=',
     'lang': 'en',
     '__bid_n': '1900b9f02442253dfe4207',
-    'ndut_fmt': 'AB10E26D65741031BFFA55A8B1493F15920FB51E7EBFA97BB58ADC1F3D72BBB9',
+    'ndut_fmt': '26072FC247E0E0E1B7C00BECB22C3D601A075611F93E73FCD62987106604BB96',
     '__stripe_mid': 'b85d61d2-4812-4eeb-8e41-b1efb3fa2a002a54d5',
     'ndus': 'YQ0oArxteHuixh3XTpWEXoBKdp_oo2PImeTyMOUc',
     'csrfToken': 'nqUTPwVBQj_vtISqp_pro2F5',
 }
 
-
-
-
 headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-  'Accept-Language': 'en-US,en;q=0.5',
-  'Connection': 'keep-alive',
-  'Upgrade-Insecure-Requests': '1',
-  'Sec-Fetch-Dest': 'document',
-  'Sec-Fetch-Mode': 'navigate',
-  'Sec-Fetch-Site': 'none',
-  'Sec-Fetch-User': '?1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+    # 'Accept-Encoding': 'gzip, deflate, br, zstd',
+    'Connection': 'keep-alive',
+    # 'Cookie': 'PANWEB=1; browserid=p4nVrnlkUVKcnbbJHnIClAhSL5uXs01e-0svx0bm7KHLUB6wIVvCUNGLIpU=; lang=en; __bid_n=1900b9f02442253dfe4207; ndut_fmt=26072FC247E0E0E1B7C00BECB22C3D601A075611F93E73FCD62987106604BB96; __stripe_mid=b85d61d2-4812-4eeb-8e41-b1efb3fa2a002a54d5; ndus=YQ0oArxteHuixh3XTpWEXoBKdp_oo2PImeTyMOUc; csrfToken=nqUTPwVBQj_vtISqp_pro2F5',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Priority': 'u=0, i',
 }
+
 
 
 def find_between(string, start, end):
