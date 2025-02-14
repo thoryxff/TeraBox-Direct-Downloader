@@ -21,17 +21,30 @@ app = Flask(__name__)
 #     'PANWEB': '1'
 # }
 
+# cookies = {
+#     'PANWEB': '1',
+#     'csrfToken': 'wuIK40OKDToiDxMHLKuJSIf4',
+#     'browserid': 'p4nVrnlkUVKcnbbJHnIClAhSL5uXs01e-0svx0bm7KHLUB6wIVvCUNGLIpU=',
+#     'lang': 'en',
+#     '__bid_n': '1900b9f02442253dfe4207',
+#     'ndut_fmt': 'A1317151959A1E421A0888303E564F405716C7C5E597EF39881E3E682431B490',
+#     '__stripe_mid': 'b85d61d2-4812-4eeb-8e41-b1efb3fa2a002a54d5',
+#     '__stripe_sid': '4bcf0730-a15d-4875-821b-cdd42a03c8e51b0c39',
+#     'ndus': 'YQ0oArxteHuixh3XTpWEXoBKdp_oo2PImeTyMOUc',
+# }
+
 cookies = {
     'PANWEB': '1',
-    'csrfToken': 'wuIK40OKDToiDxMHLKuJSIf4',
     'browserid': 'p4nVrnlkUVKcnbbJHnIClAhSL5uXs01e-0svx0bm7KHLUB6wIVvCUNGLIpU=',
     'lang': 'en',
     '__bid_n': '1900b9f02442253dfe4207',
-    'ndut_fmt': 'A1317151959A1E421A0888303E564F405716C7C5E597EF39881E3E682431B490',
+    'ndut_fmt': 'AB10E26D65741031BFFA55A8B1493F15920FB51E7EBFA97BB58ADC1F3D72BBB9',
     '__stripe_mid': 'b85d61d2-4812-4eeb-8e41-b1efb3fa2a002a54d5',
-    '__stripe_sid': '4bcf0730-a15d-4875-821b-cdd42a03c8e51b0c39',
     'ndus': 'YQ0oArxteHuixh3XTpWEXoBKdp_oo2PImeTyMOUc',
+    'csrfToken': 'nqUTPwVBQj_vtISqp_pro2F5',
 }
+
+
 
 
 headers = {
