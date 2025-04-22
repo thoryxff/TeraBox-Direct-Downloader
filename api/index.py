@@ -159,7 +159,7 @@ async def format_message(link_data):
 @app.route('/')
 def hello_world():
   #result = bot.get_me()
-  response = {'status': 'success', 'message': 'Working Fully',' Contact': '@Devil_0p || @GuyXD'}
+  response = {'status': 'success', 'message': 'Working Fully',' Contact': '@GuyXD'}
   return response
 
 
@@ -186,12 +186,14 @@ async def Api():
 async def help():
     try:
         response = {'Info': "There is Only one Way to Use This as Show Below",
-                    'Example': 'https://teraboxx.vercel.app/api?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA'}
+                    'Example': 'https://teraboxx.vercel.app/api?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA',
+                    'Example2': 'https://teraboxx.vercel.app/api2?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA'}
         return jsonify(response)
     except Exception as e:
         logging.error(f"An error occurred: {e}")
         response = {'Info': "There is Only one Way to Use This as Show Below",
-                    'Example': 'https://teraboxx.vercel.app/api?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA'}
+                    'Example': 'https://teraboxx.vercel.app/api?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA',
+                    'Example2': 'https://teraboxx.vercel.app/api2?url=https://terafileshare.com/s/1_1SzMvaPkqZ-yWokFCrKyA'}
         return jsonify(response)
 
 
