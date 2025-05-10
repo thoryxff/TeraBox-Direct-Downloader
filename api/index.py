@@ -23,6 +23,20 @@ app = Flask(__name__)
 
 
 #WORKING COOKIES
+cookies = {
+    'PANWEB': '1',
+    'browserid': '45Cbkepkx0J0bqgQi1e1ubtbstmebahkYOYm3ZWuIktZFHaUuRjvdeeHz24=',
+    'lang': 'en',
+    '__bid_n': '196b885ed7339790814207',
+    'ndut_fmt': '26BE3C564003BEB97F4ED69DEBD9974F6291C708F2B2B419F0B6282675131E1C',
+    '__stripe_mid': '31fc92f3-a12a-480f-9e44-53f30f08258a75588e',
+    'ndus': 'YdZTyX1peHuimlux_D6dLGQBeHmj0r3M3trkunHB',
+    'csrfToken': 'C84Gc54sleTMoZxBx24k4SM7',
+}
+
+
+
+#WORKING COOKIES
 # cookies = {
 #     'PANWEB': '1',
 #     'browserid': 'p4nVrnlkUVKcnbbJHnIClAhSL5uXs01e-0svx0bm7KHLUB6wIVvCUNGLIpU=',
@@ -33,20 +47,6 @@ app = Flask(__name__)
 #     'ndus': 'YylKpiCteHuiYEqq8n75Tb-JhCqmg0g4YMH03MYD',
 #     'csrfToken': 'zAVdnQAVegC92-ah6pmLf6Dl',
 # }
-
-
-cookies = {
-    'lang': 'en',
-    '__stripe_sid': '6ba5495f-e831-4a9c-a513-7a7ab2b7e0b9d5eb6f',
-    'ndus': 'YdZTyX1peHuimlux_D6dLGQBeHmj0r3M3trkunHB',
-    '_ga': 'GA1.1.1786971687.1746852519',
-    '__bid_n': '196b885ed7339790814207',
-    '__stripe_mid': '31fc92f3-a12a-480f-9e44-53f30f08258a75588e',
-    'browserid': '45Cbkepkx0J0bqgQi1e1ubtbstmebahkYOYm3ZWuIktZFHaUuRjvdeeHz24=',
-    'PANWEB': '1',
-    'csrfToken': 'C84Gc54sleTMoZxBx24k4SM7',
-    'ndut_fmt': '26BE3C564003BEB97F4ED69DEBD9974F6291C708F2B2B419F0B6282675131E1C',
-}
 
 
 headers = {
