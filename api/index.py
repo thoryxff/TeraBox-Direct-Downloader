@@ -38,13 +38,8 @@ app = Flask(__name__)
 cookies = {
     'lang': 'en',
     '__stripe_sid': '6ba5495f-e831-4a9c-a513-7a7ab2b7e0b9d5eb6f',
-    '_ga_K6JMPYL99R': 'GS2.1.s1746852518$o1$g1$t1746856379$j0$l0$h0',
-    'ab_ymg_result': '{"data":"da8926eb8716ff12c51c9bf40086f24127c2e3126b3a8c66530a42d50daa40797711e2873fe863d994f415fc0335acaddfb3aaeae3cc0a05231c5ffff2168e9b6f0aadbd833774602694a2e0fb899e27ca7e5aa108da809a42d639020c86fc4022ab1219e235d6c8b6819e3121cdb68975dec4ba636c79cbf05dcd8277382169","key_id":"66","sign":"e727e169"}',
-    '_ga_06ZNKL8C2E': 'GS2.1.s1746858983$o2$g1$t1746858997$j46$l0$h0',
-    '_gcl_au': '1.1.432005496.1746852519',
     'ndus': 'YdZTyX1peHuimlux_D6dLGQBeHmj0r3M3trkunHB',
     '_ga': 'GA1.1.1786971687.1746852519',
-    'ab_sr': '1.0.1_N2I5MDI2MWFhMmMxOGE1MWU5ZTRlZjJhYzQwM2M0NmI4ZTZjNmZhZTQ5Nzk2MzAxNTA4ZmE3OTkyZTVhZGYyMzYyZTBlOWQ1NDUxMmE4YWQ3MWJhN2VhMzc4ZTI5YmFjZDA0ODBmNTRiMDU4MzRmOWZiYjc0ZjRiMGNlYzRmYTQ4MTYzZGI4Mzc5YzdhZDUyYWFkZjIxZTRiMTBkZTk5Zg==',
     '__bid_n': '196b885ed7339790814207',
     '__stripe_mid': '31fc92f3-a12a-480f-9e44-53f30f08258a75588e',
     'browserid': '45Cbkepkx0J0bqgQi1e1ubtbstmebahkYOYm3ZWuIktZFHaUuRjvdeeHz24=',
