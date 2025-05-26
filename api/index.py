@@ -332,7 +332,20 @@ async def Api2():
         link_data = await fetch_download_link_async2(url)
 
         if link_data:
-            response = {'ShortLink': url, 'Extracted Files': link_data, 'status': 'success'}
+            # Transform the data to match the desired format
+            formatted_files = []
+            for file in link_data:
+                formatted_files.append({
+                    "file_name": file.get("file_name"),
+                    "download_link": file.get("direct_link"),  # Using the direct download link
+                    "file_size": file.get("size"),
+                    "thumbnail": file.get("thumb")
+                })
+            
+            response = {
+                'status': 'success',
+                'files': formatted_files
+            }
         else:
             response = {'status': 'error', 'message': 'No files found', 'ShortLink': url}
 
@@ -341,8 +354,5 @@ async def Api2():
     except Exception as e:
         logging.error(f"An error occurred: {e}")
         return jsonify({'status': 'error', 'message': str(e), 'Link': url})
-
-
-
 
 
