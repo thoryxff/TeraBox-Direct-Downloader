@@ -192,22 +192,40 @@ def hello_world():
 
 @app.route(rule='/api', methods=['GET'])
 async def Api():
-  try:
-      url = request.args.get('url', 'No URL Provided')
-      logging.info(f"Received request for URL: {url}")
-      link_data = await fetch_download_link_async(url)
-      if link_data:
-          tasks = [format_message(item) for item in link_data]
-          formatted_message = await asyncio.gather(*tasks)
-        #   formatted_message = await format_message(link_data[0])
-          logging.info(f"Formatted message: {formatted_message}")
-      else:
-          formatted_message = None
-      response = { 'ShortLink': url, 'Extracted Info': formatted_message,'status': 'success'}
-      return jsonify(response)
-  except Exception as e:
-      logging.error(f"An error occurred: {e}")
-      return jsonify({'status': 'error', 'message': str(e), 'Link': url})
+    try:
+        url = request.args.get('url', 'No URL Provided')
+        logging.info(f"Received request for URL: {url}")
+        link_data = await fetch_download_link_async(url)
+        
+        if link_data:
+            formatted_files = []
+            for item in link_data:
+                # Get the highest quality thumbnail (url3 is usually the highest)
+                thumbnail = item.get("thumbs", {}).get("url3", "")
+                if not thumbnail:
+                    # Fallback to other thumbnail versions if url3 doesn't exist
+                    thumbnail = next((v for k, v in item.get("thumbs", {}).items() if v), ""
+                
+                file_info = {
+                    "file_name": item.get("server_filename"),
+                    "download_link": item.get("dlink"),
+                    "file_size": await get_formatted_size_async(item.get("size", 0)),
+                    "thumbnail": thumbnail
+                }
+                formatted_files.append(file_info)
+            
+            response = {
+                'status': 'success',
+                'files': formatted_files
+            }
+        else:
+            response = {'status': 'error', 'message': 'No files found', 'ShortLink': url}
+            
+        return jsonify(response)
+        
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        return jsonify({'status': 'error', 'message': str(e), 'Link': url})
 
 @app.route(rule='/help', methods=['GET'])
 async def help():
